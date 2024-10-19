@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .header {
     background-color: #04040e;
     display: flex;
@@ -52,6 +57,7 @@
 a {
     color: #f9f9fb;
     text-decoration:solid;
+    padding: 0;
 }
 
 #skills {
@@ -81,6 +87,8 @@ a {
     display: flex;
     flex-direction: column;
     background-color: antiquewhite;
+    padding-top: 0;
+    gap: 0;
 }
 
 #div {
@@ -95,7 +103,9 @@ a {
 }
 
 #contact {
-    height: 150px;
+    padding: 20px;
+    align-items: 20px;
+    height: auto;
     display: flex;
     flex-direction: column;
     background-color: #04040e;
@@ -122,6 +132,51 @@ a {
   }
 
   h1, h4, li, h3, a {
-    font-family: 'Agdasima';
+    font-family: 'Agdasima', sans-serif;
     src: url(https://fonts.google.com/share?selection.family=Agdasima:wght@400;700);
   }
+
+  #a-end {
+    background-color: #04040e;
+    display: flex;
+    gap: 10px;
+    padding-bottom: 0%;
+    justify-content: center;
+    text-align: center;
+    box-decoration-break:slice;
+  }
+
+  .a-div {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-top: 30px;
+    height: 10px;
+    width: 2px;
+    background-color: #f9f9fb;
+  }
+
+  @media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    #projects {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h4, li {
+        font-size: 1rem;
+    }
+}
