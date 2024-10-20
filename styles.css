@@ -13,12 +13,15 @@ body {
 
 #a {
     display: flex;
-    flex-direction: row;
-    flex: 1;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
     gap: 10px; 
     position: absolute;
     right: 0;
-    padding-left: 15px;
+    margin: 0;
+    padding-top: 0;
+    padding-left: 2px;
 }
 
 #b {
@@ -40,7 +43,7 @@ body {
 
 #about {
     height: 50;
-    background-color: hsl(0, 78%, 22%);
+    background-color: hsl(219, 77%, 29%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,6 +61,8 @@ a {
     color: #f9f9fb;
     text-decoration:solid;
     padding: 0;
+    align-items: center;
+    text-align: center;
 }
 
 #skills {
@@ -103,7 +108,8 @@ a {
 }
 
 #contact {
-    padding: 20px;
+    padding: 0;
+    padding-top: 0;
     align-items: 20px;
     height: auto;
     display: flex;
@@ -140,9 +146,9 @@ a {
     background-color: #04040e;
     display: flex;
     gap: 10px;
-    padding-bottom: 0%;
     justify-content: center;
     text-align: center;
+    align-items: center;
     box-decoration-break:slice;
   }
 
@@ -151,9 +157,10 @@ a {
     justify-content: center;
     align-items:center;
     padding-top: 30px;
-    height: 10px;
+    height: 5px;
     width: 2px;
     background-color: #f9f9fb;
+
   }
 
   @media (max-width: 480px) {
